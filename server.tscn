@@ -1,0 +1,27 @@
+[gd_scene load_steps=2 format=3 uid="uid://d1on4gkpt4fk2"]
+
+[ext_resource type="Script" path="res://server.gd" id="1_30gy2"]
+
+[node name="server" type="Node"]
+script = ExtResource("1_30gy2")
+
+[node name="LineEdit" type="LineEdit" parent="."]
+offset_left = 293.0
+offset_top = 137.0
+offset_right = 945.0
+offset_bottom = 175.0
+
+[node name="Button" type="Button" parent="."]
+offset_left = 578.0
+offset_top = 285.0
+offset_right = 673.0
+offset_bottom = 317.0
+text = "Send"
+
+[node name="debug" type="RichTextLabel" parent="."]
+offset_left = 409.0
+offset_top = 330.0
+offset_right = 840.0
+offset_bottom = 568.0
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
